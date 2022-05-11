@@ -6,7 +6,15 @@ function home () {
         <Def>
             <main>
                 <h1>HOME</h1>
-                <button className='btn-primary'>Places Page</button>
+                <div>
+                    <img src='/images/shish-kabob.jpg' alt='shish-kabob plate'/>
+                    <div>
+                        Photo by Victoria Shes on Unsplash
+                    </div>
+                </div>
+                <a href='/places'>
+                    <button className='btn-primary'>Places Page</button>
+                </a>
             </main>
         </Def>
     )
