@@ -20,7 +20,7 @@ router.get('/new', (req, res) => {
 
 // DELETE
 router.delete('/:id', (req, res) => {
-    res.send('DELETE /places/:id stub')
+    res.redirect('/places')
 })
 
 // CREATE
