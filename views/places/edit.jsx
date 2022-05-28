@@ -6,7 +6,7 @@ function edit_form (data) {
         <Def>
             <main>
                 <h1>Edit Place</h1>
-                <form method='POST' action={`/places/${data.id}?_method=PUT`}>
+                <form method='POST' action={`/places/${data.place.id}?_method=PUT`}>
                     <div className='form-group'>
                         <label htmlFor='name'>Place Name</label>
                         <input defaultValue={data.place.name} className='form-control' required id='name' name='name'/>
@@ -29,7 +29,11 @@ function edit_form (data) {
                         <label htmlFor='cuisines'>Cuisines</label>
                         <input defaultValue={data.place.cuisines} className='form-control' required id='cuisines' name='cuisines'/>
                     </div>
-                    <input className='btn btn-primary' type='submit' value='Edit Place'/>
+                    <div className="form-group">
+                        <label for="founded">Founded Year</label>
+                        <input type='number' className="form-control" id="founded" name="founded" value={data.place.founded} />
+                    </div>
+                    <input className='btn btn-primary' type='submit' value='Update Place'/>
                 </form>
             </main>
         </Def>

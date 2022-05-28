@@ -62,7 +62,7 @@ function show (data) {
                     <h2>Rating</h2>
                     {rating}
                 </div>
-                <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
+                <a href={`/places/${data.place.id}/edit`} className='btn btn-warning'>
                     Edit
                 </a>
                 <form method='POST' action={`/places/${data.place.id}?_method=DELETE`}>
